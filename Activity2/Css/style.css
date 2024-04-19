@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient();
+    display: flex;
+    /* background-color: rgb(25, 111, 122); */
+    background: linear-gradient(rgb(119, 119, 243),lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user1{
+    width: 35%;
+    height: 50%;
+    /* background-color: rgb(235, 235, 90); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+
+}
+
+.user_img{
+width: 110px;
+}
+
+.user_img img{
+    width: 90%;
+    overflow: hidden;
+}
+
+.dice_frame{
+width: 100px;
+}
+
+.dice_frame img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.user_name h2{
+color: #fff;
+}
+
+.user1_score , .user2_score{
+    color: #fff;
+}
+
+
+
+.user2{
+    width: 35%;
+    /* background-color: rgb(231, 77, 77); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    padding: 30px 20px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    flex-direction: column;
+    /* background: linear-gradient(#fff,rgb(99, 102, 101)); */
+    height: 50%;
+}
+
+.button button{
+    width: 80%;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 65px 0px rgba(243, 240, 240, 0.75);
+    border-radius: 5px;
+}
+
+.button button:focus{
+    border: none;
+}
+
+.score1 , .score2{
+    color: red;
+    margin-left: 10px;
+}
+
+.user1_score , .user2_score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

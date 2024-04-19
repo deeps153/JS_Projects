@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+
+    <style>
+
+        body{
+            width:100vw;
+            background:linear-gradient(rgb(142, 142, 245),rgb(227, 231, 227));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .dice_frame{
+            width: 100px;
+
+        }
+
+        .dice_frame img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Math.floor(Math.random() * 6) + 1; -->
+
+    <div class="dice_frame">
+        <img src="./Images/1.png" alt="">
+    </div>
+
+    <button id="btn">Click Me🤓</button>
+
+
+    <script>
+
+        var btn = document.querySelector("#btn");
+        var diceFrame = document.querySelector('.dice_frame');
+
+        var[diceImg] = diceFrame.children;
+
+        btn.addEventListener('click',()=>{
+            var num =  Math.floor(Math.random() * 6) + 1; 
+            diceImg.src = "./Images/"+num+".png";
+        })
+    </script>
+
+    <!-- <script src="./JavaScript/style.js"></script> -->
+</body>
+</html>
